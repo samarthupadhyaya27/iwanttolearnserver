@@ -1,1 +1,1 @@
-/Applications/Postgres.app/Contents/Versions/13/bin/postgres "-D" "/Users/samarthupadhyaya/Documents/My Stuff/Code Projects/iwanttolearn/server/Postgres" "-p" "5432"
+/usr/local/Cellar/postgresql/13.4/bin/postgres "-D" "."
