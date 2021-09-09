@@ -1,1 +1,0 @@
-/usr/local/Cellar/postgresql/13.4/bin/postgres "-D" "Postgres/data" "-F" "-p" "5444"
