@@ -4,3 +4,11 @@
 2021-09-10 04:08:56.992 +08 [5055] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
 2021-09-10 04:08:56.997 +08 [5056] LOG:  database system was shut down at 2021-09-10 04:08:56 +08
 2021-09-10 04:08:57.008 +08 [5055] LOG:  database system is ready to accept connections
+2021-09-10 04:13:22.864 +08 [5135] LOG:  starting PostgreSQL 13.4 on x86_64-apple-darwin20.4.0, compiled by Apple clang version 12.0.5 (clang-1205.0.22.9), 64-bit
+2021-09-10 04:13:22.867 +08 [5135] LOG:  listening on IPv4 address "127.0.0.1", port 5432
+2021-09-10 04:13:22.867 +08 [5135] LOG:  listening on IPv6 address "::1", port 5432
+2021-09-10 04:13:22.868 +08 [5135] LOG:  listening on Unix socket "/tmp/.s.PGSQL.5432"
+2021-09-10 04:13:22.873 +08 [5136] LOG:  database system was shut down at 2021-09-10 04:13:22 +08
+2021-09-10 04:13:22.879 +08 [5135] LOG:  database system is ready to accept connections
+2021-09-10 04:14:57.524 +08 [5159] FATAL:  database "samarthupadhyaya" does not exist
+2021-09-10 04:15:02.953 +08 [5161] FATAL:  database "template0" is not currently accepting connections
