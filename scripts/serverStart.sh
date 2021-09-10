@@ -8,4 +8,4 @@ else
 	eval lsof -ti tcp:5432 | xargs --no-run-if-empty kill -9
 fi
 
-eval "pg_ctl start -l Postgres/postgresql.log -o \"-F -p 5432\" -D Postgres/data"
+eval "pg_ctl start -D Postgres/data -l Postgres/postgresql.log -o \"-F -p 5432\""
