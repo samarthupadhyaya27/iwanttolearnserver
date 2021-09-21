@@ -1,0 +1,6 @@
+{
+    "include": ["src", "__tests__"],
+    "exclude": ["node_modules"],
+    "extends": "@tsconfig/recommended/tsconfig.json",
+    "allowJs": true
+}

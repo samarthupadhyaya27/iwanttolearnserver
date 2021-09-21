@@ -2,9 +2,9 @@ const express = require('express')
 const router = express.Router()
 const bcrypt = require('bcrypt')
 const pool = require('../db')
-const jwtGenerator = require('../utils/jwtGenerator')
-const validator = require('../middleware/validator')
-const authorization = require('../middleware/authorization')
+const jwtGenerator = require('../../utils/jwtGenerator')
+const validator = require('../../middleware/validator')
+const authorization = require('../../middleware/authorization')
 
 router.post(
 	'/register',
