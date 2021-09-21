@@ -3,13 +3,19 @@ cd "$(dirname "${BASH_SOURCE[0]}")"
 
 echo "Deleting existing database if it exists"
 # Delete database files if it already exists
-eval "pg_ctl stop -D ../Postgres/data"
+if pg_isready -q -p 5432
+then 
+    echo "Found active server. Shutting down server..."
+    eval ./serverStop.sh
+    echo "Server closed"
+else
+    echo "No active server found. Continuing..."
+fi
 eval "rm -rf ../Postgres/data"
 eval "initdb -D ../Postgres/data"
 
-# Start the database
-eval "pg_ctl -D ../Postgres/data -l ../Postgres/logfile start"
+# Start the Server
+./serverStart.sh
 
-if [ -f "schemaSetupFiles/createDatabase.sql" ]; then
-	eval psql -p 5432 -d postgres -f "schemaSetupFiles/createDatabase.sql"
-fi
+# Intialize the databsae
+./setupDatabase.sh
